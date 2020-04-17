@@ -1,0 +1,40 @@
+D:\WWW\site>php artisan app:name Furbook
+Application namespace set!
+
+D:\WWW\site>git add .
+
+D:\WWW\site>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   app/Console/Commands/Inspire.php
+        modified:   app/Console/Kernel.php
+        modified:   app/Events/Event.php
+        modified:   app/Exceptions/Handler.php
+        modified:   app/Http/Controllers/Auth/AuthController.php
+        modified:   app/Http/Controllers/Auth/PasswordController.php
+        modified:   app/Http/Controllers/Controller.php
+        modified:   app/Http/Kernel.php
+        modified:   app/Http/Middleware/Authenticate.php
+        modified:   app/Http/Middleware/EncryptCookies.php
+        modified:   app/Http/Middleware/RedirectIfAuthenticated.php
+        modified:   app/Http/Middleware/VerifyCsrfToken.php
+        modified:   app/Http/Requests/Request.php
+        modified:   app/Jobs/Job.php
+        modified:   app/Providers/AppServiceProvider.php
+        modified:   app/Providers/AuthServiceProvider.php
+        modified:   app/Providers/EventServiceProvider.php
+        modified:   app/Providers/RouteServiceProvider.php
+        modified:   app/User.php
+        modified:   bootstrap/app.php
+        deleted:    bootstrap/cache/services.php
+        modified:   composer.json
+        modified:   config/app.php
+        modified:   config/auth.php
+        modified:   config/services.php
+        modified:   database/factories/ModelFactory.php
+        modified:   vendor/composer/autoload_classmap.php
+        modified:   vendor/composer/autoload_psr4.php
+        modified:   vendor/composer/autoload_static.php
