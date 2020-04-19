@@ -272,6 +272,8 @@ class ComposerStaticInit48c67d66f58a1872dbb0b87ca5aa2ef3
     );
 
     public static $classMap = array (
+        'BreedsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/BreedsTableSeeder.php',
+        'CatsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CatsTableSeeder.php',
         'CreateBreedsTable' => __DIR__ . '/../..' . '/database/migrations/2020_04_19_034505_create_breeds_table.php',
         'CreateCatsTable' => __DIR__ . '/../..' . '/database/migrations/2020_04_19_043232_create_cats_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

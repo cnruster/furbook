@@ -145,3 +145,66 @@ Untracked files:
         database/migrations/2020_04_19_043232_create_cats_table.php
 
 no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\WWW\site>composer dump-autoload
+Generating autoload files
+Carbon 1 is deprecated, see how to migrate to Carbon 2.
+https://carbon.nesbot.com/docs/#api-carbon-2
+    You can run ".\vendor\bin\upgrade-carbon" to get help in updating carbon and other frameworks and libraries that depend on it.
+Generated autoload files
+
+D:\WWW\site>php artisan db:seed
+Seeded: BreedsTableSeeder
+Seeded: CatsTableSeeder
+
+D:\WWW\site>mysql -uroot -psecret
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 9
+Server version: 10.3.22-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use furbook;
+Database changed
+MariaDB [furbook]> select * from cats;
++----+---------+---------------+----------+
+| id | name    | date_of_birth | breed_id |
++----+---------+---------------+----------+
+|  1 | Alpha   | 0000-00-00    |        1 |
+|  2 | Bob     | 0000-00-00    |        1 |
+|  3 | Charles | 0000-00-00    |        4 |
+|  4 | Delta   | 0000-00-00    |        4 |
++----+---------+---------------+----------+
+4 rows in set (0.049 sec)
+
+MariaDB [furbook]> select * from breeds;
++----+------------+
+| id | name       |
++----+------------+
+|  1 | Domestic   |
+|  2 | Persian    |
+|  3 | Siamese    |
+|  4 | Abyssinian |
++----+------------+
+4 rows in set (0.000 sec)
+
+MariaDB [furbook]> quit
+Bye
+
+D:\WWW\site>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   database/seeds/BreedsTableSeeder.php
+        new file:   database/seeds/CatsTableSeeder.php
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   database/seeds/BreedsTableSeeder.php
+        modified:   database/seeds/CatsTableSeeder.php
+        modified:   database/seeds/DatabaseSeeder.php
+        modified:   vendor/composer/autoload_classmap.php
+        modified:   vendor/composer/autoload_static.php
