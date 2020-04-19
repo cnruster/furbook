@@ -38,3 +38,54 @@ Changes to be committed:
         modified:   vendor/composer/autoload_classmap.php
         modified:   vendor/composer/autoload_psr4.php
         modified:   vendor/composer/autoload_static.php
+
+D:\WWW\site>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .env
+        deleted:    .env.example
+        modified:   app/Http/routes.php
+        new file:   resources/views/about.php
+
+D:\WWW\site>php artisan make:migration create_breeds_table --create=breeds
+Created Migration: 2020_04_19_034505_create_breeds_table
+
+D:\WWW\site>mysql -uroot -psecret
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 11
+Server version: 10.3.22-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database furbook;
+Query OK, 1 row affected (0.014 sec)
+
+MariaDB [(none)]> quit
+Bye
+
+D:\WWW\site>php artisan migrate
+Migration table created successfully.
+Migrated: 2014_10_12_000000_create_users_table
+Migrated: 2014_10_12_100000_create_password_resets_table
+Migrated: 2020_04_19_034505_create_breeds_table
+
+D:\WWW\site>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   cmdlog.txt
+        modified:   vendor/composer/autoload_classmap.php
+        modified:   vendor/composer/autoload_static.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app/breed.php
+        app/cat.php
+        database/migrations/2020_04_19_034505_create_breeds_table.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
