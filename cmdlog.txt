@@ -89,3 +89,59 @@ Untracked files:
         database/migrations/2020_04_19_034505_create_breeds_table.php
 
 no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\WWW\site>php artisan make:migration create_cats_table --create=cats
+Created Migration: 2020_04_19_043232_create_cats_table
+
+D:\WWW\site>php artisan migrate
+Migrated: 2020_04_19_043232_create_cats_table
+
+D:\WWW\site>mysql -uroot -psecret
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 17
+Server version: 10.3.22-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use furbook;
+Database changed
+MariaDB [furbook]> select * from migrations;
++------------------------------------------------+-------+
+| migration                                      | batch |
++------------------------------------------------+-------+
+| 2014_10_12_000000_create_users_table           |     1 |
+| 2014_10_12_100000_create_password_resets_table |     1 |
+| 2020_04_19_034505_create_breeds_table          |     2 |
+| 2020_04_19_043232_create_cats_table            |     3 |
++------------------------------------------------+-------+
+4 rows in set (0.000 sec)
+
+MariaDB [furbook]> describe cats;
++---------------+------------------+------+-----+---------+----------------+
+| Field         | Type             | Null | Key | Default | Extra          |
++---------------+------------------+------+-----+---------+----------------+
+| id            | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| name          | varchar(255)     | NO   |     | NULL    |                |
+| date_of_birth | date             | NO   |     | NULL    |                |
+| breed_id      | int(10) unsigned | YES  | MUL | NULL    |                |
++---------------+------------------+------+-----+---------+----------------+
+4 rows in set (0.032 sec)
+
+MariaDB [furbook]> quit
+Bye
+
+D:\WWW\site>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   vendor/composer/autoload_classmap.php
+        modified:   vendor/composer/autoload_static.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        database/migrations/2020_04_19_043232_create_cats_table.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
