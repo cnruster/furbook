@@ -224,3 +224,38 @@ Changes to be committed:
         new file:   resources/views/about.blade.php
         deleted:    resources/views/about.php
         new file:   resources/views/layouts/master.blade.php
+
+D:\WWW\site>composer upgrade
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 0 installs, 1 update, 0 removals
+  - Updating webmozart/assert (1.7.0 => 1.8.0): Downloading (100%)
+Package jakub-onderka/php-console-color is abandoned, you should avoid using it. Use php-parallel-lint/php-console-color instead.
+Package jakub-onderka/php-console-highlighter is abandoned, you should avoid using it. Use php-parallel-lint/php-console-highlighter instead.
+Package jeremeamia/superclosure is abandoned, you should avoid using it. Use opis/closure instead.
+Package mtdowling/cron-expression is abandoned, you should avoid using it. Use dragonmantank/cron-expression instead.
+Package phpunit/phpunit-mock-objects is abandoned, you should avoid using it. No replacement was suggested.
+Writing lock file
+Generating autoload files
+Carbon 1 is deprecated, see how to migrate to Carbon 2.
+https://carbon.nesbot.com/docs/#api-carbon-2
+    You can run ".\vendor\bin\upgrade-carbon" to get help in updating carbon and other frameworks and libraries that depend on it.
+6 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> Illuminate\Foundation\ComposerScripts::postUpdate
+> php artisan optimize
+Generating optimized class loader
+
+D:\WWW\site>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   composer.lock
+        modified:   vendor/composer/autoload_classmap.php
+        modified:   vendor/composer/autoload_static.php
+        modified:   vendor/composer/installed.json
+        modified:   vendor/webmozart/assert/CHANGELOG.md
+        modified:   vendor/webmozart/assert/README.md
+        deleted:    vendor/webmozart/assert/ci/composer.json
+        modified:   vendor/webmozart/assert/composer.json
+        modified:   vendor/webmozart/assert/src/Assert.php
