@@ -208,3 +208,19 @@ Changes not staged for commit:
         modified:   database/seeds/DatabaseSeeder.php
         modified:   vendor/composer/autoload_classmap.php
         modified:   vendor/composer/autoload_static.php
+
+
+D:\WWW\site>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   public/css/app.css
+        new file:   public/css/bootstrap.min.css
+        new file:   public/fonts/glyphicons-halflings-regular.eot
+        new file:   public/fonts/glyphicons-halflings-regular.svg
+        new file:   public/fonts/glyphicons-halflings-regular.ttf
+        new file:   public/fonts/glyphicons-halflings-regular.woff
+        new file:   public/fonts/glyphicons-halflings-regular.woff2
+        new file:   resources/views/about.blade.php
+        deleted:    resources/views/about.php
+        new file:   resources/views/layouts/master.blade.php
