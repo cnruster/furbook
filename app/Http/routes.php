@@ -20,7 +20,8 @@ Route::get('cats/{id}', function($id) {
 });
 
 Route::get('cats', function() {
-    return 'All cats';
+    $cats = Furbook\Cat::all();
+    return view('cats.index')->with('cats', $cats);
 });
 
 Route::get('about', function() {

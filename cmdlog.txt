@@ -259,3 +259,11 @@ Changes to be committed:
         deleted:    vendor/webmozart/assert/ci/composer.json
         modified:   vendor/webmozart/assert/composer.json
         modified:   vendor/webmozart/assert/src/Assert.php
+
+
+D:\WWW\site>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   app/Http/routes.php
+        new file:   resources/views/cats/index.blade.php
