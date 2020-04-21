@@ -267,3 +267,13 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         modified:   app/Http/routes.php
         new file:   resources/views/cats/index.blade.php
+
+
+D:\WWW\site>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   app/Http/routes.php
+        modified:   app/Providers/RouteServiceProvider.php
+        new file:   resources/views/cats/show.blade.php
+

@@ -15,8 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('cats/{id}', function($id) {
-    return sprintf('Cat #%s', $id);
+//Route::get('cats/{id}', function($id) {
+Route::get('cats/{cat}', function(Furbook\Cat $cat) {
+    return view('cats.show') ->with('cat', $cat);
 });
 
 Route::get('cats', function() {
