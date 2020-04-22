@@ -277,3 +277,44 @@ Changes to be committed:
         modified:   app/Providers/RouteServiceProvider.php
         new file:   resources/views/cats/show.blade.php
 
+
+D:\WWW\site>composer upgrade
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing laravelcollective/html (v5.2.6): Downloading (100%)
+Package jakub-onderka/php-console-color is abandoned, you should avoid using it. Use php-parallel-lint/php-console-color instead.
+Package jakub-onderka/php-console-highlighter is abandoned, you should avoid using it. Use php-parallel-lint/php-console-highlighter instead.
+Package jeremeamia/superclosure is abandoned, you should avoid using it. Use opis/closure instead.
+Package mtdowling/cron-expression is abandoned, you should avoid using it. Use dragonmantank/cron-expression instead.
+Package phpunit/phpunit-mock-objects is abandoned, you should avoid using it. No replacement was suggested.
+Writing lock file
+Generating autoload files
+Carbon 1 is deprecated, see how to migrate to Carbon 2.
+https://carbon.nesbot.com/docs/#api-carbon-2
+    You can run ".\vendor\bin\upgrade-carbon" to get help in updating carbon and other frameworks and libraries that depend on it.
+6 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> Illuminate\Foundation\ComposerScripts::postUpdate
+> php artisan optimize
+Generating optimized class loader
+
+D:\WWW\site>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   composer.json
+        modified:   composer.lock
+        modified:   vendor/composer/autoload_classmap.php
+        modified:   vendor/composer/autoload_files.php
+        modified:   vendor/composer/autoload_psr4.php
+        modified:   vendor/composer/autoload_static.php
+        modified:   vendor/composer/installed.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        vendor/laravelcollective/
+
+no changes added to commit (use "git add" and/or "git commit -a"
+
