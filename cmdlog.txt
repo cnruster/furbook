@@ -332,4 +332,8 @@ Changes to be committed:
         new file:   resources/views/cats/edit.blade.php
         new file:   resources/views/partials/forms/cat.blade.php
 
-
+D:\WWW\site>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   app/Http/routes.php

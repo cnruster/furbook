@@ -55,3 +55,12 @@ Route::delete('cats/{cat}', function(Furbook\Cat $cat) {
     $cat->delete();
     return redirect('cats')->withSuccess('Cat has been deleted.');
 });
+
+Route::get('cats/breeds/{name}', function($name) {
+    $breed = Furbook\Breed::with('cats')
+        ->whereName($name)
+        ->first();
+    return view('cats.index')
+        ->with('breed', $breed)
+        ->with('cats', $breed->cats);
+});
