@@ -318,3 +318,18 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a"
 
+
+D:\WWW\site>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   app/Http/Views/Composers/CatFormComposer.php
+        modified:   app/Http/routes.php
+        modified:   app/Providers/AppServiceProvider.php
+        modified:   config/app.php
+        new file:   resources/views/cats/create.blade.php
+        new file:   resources/views/cats/delete.blade.php
+        new file:   resources/views/cats/edit.blade.php
+        new file:   resources/views/partials/forms/cat.blade.php
+
+

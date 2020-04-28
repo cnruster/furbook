@@ -156,6 +156,10 @@ return [
         Furbook\Providers\EventServiceProvider::class,
         Furbook\Providers\RouteServiceProvider::class,
 
+        /*
+         * Custom added Service Providers...
+         */
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -202,6 +206,12 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        /*
+         * custom added facades...
+         */
+        'Form' => Collective\Html\FormFacade::class,
+        'HTML' => Collective\Html\HtmlFacade::class,
+        'Input' => Illuminate\Support\Facades\Input::class,
     ],
 
 ];
